@@ -567,7 +567,7 @@ def evalimages(net:Yolact, input_folder:str, output_folder:str):
 from multiprocessing.pool import ThreadPool
 
 def evalvideo(net:Yolact, path:str):
-    vid = cv2.VideoCapture(path)
+    vid = cv2.VideoCapture(0) # path)
     transform = FastBaseTransform()
     frame_times = MovingAverage()
     fps = 0
