@@ -1,5 +1,5 @@
 cipy
-cython
+Cython
 scikit-image
 opencv-python
 h5py
